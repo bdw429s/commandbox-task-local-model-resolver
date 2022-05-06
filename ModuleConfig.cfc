@@ -16,7 +16,7 @@ component {
             mapping.getDIProperties().each( (prop)=>{
                 // If the injection has a DSL without a `:`...
                 if( !isNull( prop.dsl ) && !prop.dsl.find( ':' ) ) {
-                    var CFCPath = shell.pwd() & prop.dsl & '.cfc';
+                    var CFCPath = shell.pwd() & prop.dsl.listChangeDelims( '/', '.' ) & '.cfc';
                     // ... check and see if it points to a CFC in the working dir of the shell
                     if( fileExists( CFCPath ) ) {
                         // and override it to be a full relative path to taht CFC
