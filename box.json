@@ -1,0 +1,41 @@
+{
+    "author":"Brad Wood",
+    "bugs":"",
+    "changelog":"",
+    "contributors":[],
+    "dependencies":{},
+    "description":"",
+    "devDependencies":{},
+    "documentation":"",
+    "homepage":"https://github.com/bdw429s/commandbox-task-local-model-resolver",
+    "ignore":[
+        "**/.*",
+        "/test/",
+        "/tests/"
+    ],
+    "installPaths":{},
+    "instructions":"",
+    "keywords":"",
+    "license":[
+        {
+            "type":"",
+            "URL":""
+        }
+    ],
+    "location":"ForgeboxStorage",
+    "name":"CommandBox Task Local Model Resolver",
+    "private":false,
+    "projectURL":"",
+    "repository":{
+        "type":"Git",
+        "URL":"https://github.com/bdw429s/commandbox-task-local-model-resolver"
+    },
+    "scripts":{
+        "onRelease":"publish",
+        "postPublish":"!git push --follow-tags"
+    },
+    "shortDescription":"A simple module that allows Task Runners to inject CFCs from the shell's working dir",
+    "slug":"commandbox-task-local-model-resolver",
+    "type":"commandbox-modules",
+    "version":"0"
+}
